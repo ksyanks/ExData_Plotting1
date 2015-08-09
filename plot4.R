@@ -16,6 +16,7 @@ plot(dateTime,as.numeric(my2dayData$Voltage), type = "l", ylab = "Energy Sub Met
 plot(dateTime,as.numeric(my2dayData$Sub_metering_1), type = "l", xlab = "", ylab = "Energy Sub Metering" )
 lines(dateTime,as.numeric(my2dayData$Sub_metering_2), type = "l", col = "red" )
 lines(dateTime,as.numeric(my2dayData$Sub_metering_3), type = "l", col = "blue" )
+
 legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd=2,col=c("black", "red", "blue"),bty = "n")
 
 plot(dateTime,as.numeric(my2dayData$Global_reactive_power), type = "l", ylab = "Global Reactive Power" )
